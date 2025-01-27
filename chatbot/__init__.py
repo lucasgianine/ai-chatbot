@@ -9,7 +9,7 @@ os.environ['GROQ_API_KEY'] = api_key
 chat = ChatGroq(model='GROQ_MODEL')
 
 def response_bot(messages, documents):
-  system_prompt = '''Você é um assistente amigável chamado Asimo.
+  system_prompt = '''Você é um assistente amigável que vai responder o usuário baseado nos dados que receber.
   Você utiliza as seguintes informações para formular as suas respostas:
   {documents}'''
 
